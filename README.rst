@@ -8,9 +8,9 @@ Print a beautifull millipede to send to your friends !!!
 
 Basic usage::
 
- $ millipede 20 "Chaud devant! Mon millepatte doit passer!"
+ $ millipede 20 "Chaud devant! Mon mille-pattes doit passer!"
  
- Chaud devant! Mon millepatte doit passer!
+ Chaud devant! Mon mille-pattes doit passer!
  
      ╚⊙ ⊙╝
    ╚═(███)═╝
@@ -64,7 +64,7 @@ There's also a very convenient `-r` option to reverse the millipede::
 
 Customize the millipede::
 
-  $ milliped 20 -t bocal 'Chaud devant! Mon beau millepatte doit passer!'
+  $ milliped 20 -t bocal 'Chaud devant! Mon beau mille-pattes doit passer!'
  
      ╚⊙ ⊙╝
    ╚═(🐟🐟🐟)═╝
