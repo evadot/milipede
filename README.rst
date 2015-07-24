@@ -4,6 +4,8 @@ millipede
 .. image:: https://travis-ci.org/evadot/millipede.svg
            :target: https://travis-ci.org/evadot/millipede
 
+.. image:: https://go-shields.herokuapp.com/license-MIT-blue.png
+
 Print a beautifull millipede to send to your friends !!!
 
 Basic usage::
