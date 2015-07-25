@@ -35,10 +35,11 @@ class TestMillipedeSize(unittest.TestCase):
     def test_padding(self):
         "Test padding on sufficient size"
         self.assertEqual(
-            millipede.millipede(10),
+            millipede.millipede(11),
             """    ╚⊙ ⊙╝\n"""
             """  ╚═(███)═╝\n"""
             """ ╚═(███)═╝\n"""
+            """╚═(███)═╝\n"""
             """╚═(███)═╝\n"""
             """ ╚═(███)═╝\n"""
             """  ╚═(███)═╝\n"""
@@ -75,7 +76,7 @@ class TestMillipedeReverse(unittest.TestCase):
         "Test with reverse enabled"
         self.assertEqual(
             millipede.millipede(1, reverse=True),
-            """ ╔═(███)═╗\n"""
+            """╔═(███)═╗\n"""
             """    ╔⊙ ⊙╗\n"""
         )
 
@@ -83,7 +84,7 @@ class TestMillipedeReverse(unittest.TestCase):
         "Test a comment with reverse enabled"
         self.assertEqual(
             millipede.millipede(1, comment="coucou", reverse=True),
-            """ ╔═(███)═╗\n"""
+            """╔═(███)═╗\n"""
             """    ╔⊙ ⊙╗\n\n"""
             """coucou\n"""
         )
