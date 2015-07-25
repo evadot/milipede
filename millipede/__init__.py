@@ -18,7 +18,7 @@ def millipede(size, comment=None, reverse=False, template='default'):
     """
     Output the millipede
     """
-    padding_offsets = [2, 1, 0, 1, 2, 3, 4, 4, 3]
+    padding_offsets = [2, 1, 0, 0, 1, 2, 3, 4, 4, 3]
 
     templates = {
         'frozen': {'bodyr': '╔═(❄❄❄)═╗', 'body': '╚═(❄❄❄)═╝'},
@@ -34,7 +34,7 @@ def millipede(size, comment=None, reverse=False, template='default'):
     head = "    ╔⊙ ⊙╗\n" if reverse else "    ╚⊙ ⊙╝\n"
     body = "".join([
         "{}{}\n".format(
-            " " * padding_offsets[(x + 3 * int(reverse)) % 9],
+            " " * padding_offsets[(x + 3 * int(reverse)) % 10],
             template['bodyr'] if reverse else template['body']
         )
         for x in range(size)
