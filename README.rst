@@ -139,6 +139,54 @@ Installation from sources
  # install (for production)
  $> pip install .
 
+Run millipede on your Scaleway C1 server
+========================================
+
+::
+
+ # Install Scaleway CLI
+ $> curl -L https://github.com/scaleway/scaleway-cli/releases/download/v1.1.0/scw-`uname -s`-`uname -m` > /usr/local/bin/scw
+ chmod +x /usr/local/bin/scw
+
+ # Login
+ $> scw login --token=<your_token> --organization=<your_organization>
+
+ # Run millipede on your C1 server
+ $> ./millipede.scw scw run --name=milliped ubuntu-trusty
+ $> ./millipede.scw
+ [+] Creating your millipede server...
+ [+] Server created: 77b531d8-b954-405f-988e-82e79486acf7
+ [+] Booting...
+ [+] Server is booted
+ [+] Installing millipede...
+ [+] Running millipede
+ My millipede is magnificent
+     ╚⊙ ⊙╝
+   ╚═(███)═╝
+  ╚═(███)═╝
+ ╚═(███)═╝
+  ╚═(███)═╝
+   ╚═(███)═╝
+    ╚═(███)═╝
+     ╚═(███)═╝
+     ╚═(███)═╝
+    ╚═(███)═╝
+   ╚═(███)═╝
+  ╚═(███)═╝
+ ╚═(███)═╝
+  ╚═(███)═╝
+   ╚═(███)═╝
+    ╚═(███)═╝
+     ╚═(███)═╝
+     ╚═(███)═╝
+    ╚═(███)═╝
+   ╚═(███)═╝
+  ╚═(███)═╝
+ [+] Stopping the server
+ [+] Server stopped
+ [+] Deleting server
+ [+] Server deleted
+
 Test in a confined environment
 ==============================
 
