@@ -5,7 +5,7 @@ Print a beautifull millipede to send to your friends !!!
 
 Basic usage::
 
- $ millipede 20 "Chaud devant! Mon millepatte doit passer!"
+ $ millipede 20 "Chaud devant! Mon mille-pattes doit passer!"
  
  Chaud devant! Mon millepatte doit passer!
  
